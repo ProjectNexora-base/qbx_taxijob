@@ -3,7 +3,7 @@ game 'gta5'
 
 description 'QBX_TaxiJob'
 repository 'https://github.com/Qbox-project/qbx_taxijob'
-version '1.0.0'
+version '1.0.1'
 
 shared_scripts {
 	'@ox_lib/init.lua',
@@ -15,7 +15,10 @@ client_scripts {
 	'client/main.lua',
 }
 
-server_script 'server/main.lua'
+server_scripts {
+	'server/main.lua',
+	'server/pn-lib-config.lua',
+}
 
 ui_page 'html/meter.html'
 
